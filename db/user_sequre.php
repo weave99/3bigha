@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION['user_email']))
+{
+    header("location:user_login.php");
+}
+else
+  {
+    $session_user_email=$_SESSION['user_email'];
+    $session_user_mobile_no=$_SESSION['user_mobile_no'];
+    $session_user_id=$_SESSION['user_id'];
+  }
+?>
